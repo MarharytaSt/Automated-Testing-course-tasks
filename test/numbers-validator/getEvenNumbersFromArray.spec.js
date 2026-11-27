@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const { describe, it, beforeEach, afterEach } = require('mocha');
 const NumbersValidator = require('../../app/numbers_validator');
 
-describe('getEvenNumbersFromArray', () => {
+
   let validator;
 
   beforeEach(() => {
@@ -38,4 +38,4 @@ describe('getEvenNumbersFromArray', () => {
         .to.throw(`[${input}] is not an array of "Numbers"`);
     });
   });
-});
+
